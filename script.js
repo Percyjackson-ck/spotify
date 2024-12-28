@@ -3,7 +3,7 @@ let songs=[];
 let currfolder;
 async function getsongs(folder) {
     currfolder=folder;
-    let a = await fetch(`http://127.0.0.1:3000/spotify/${folder}/`)
+    let a = await fetch(`http://127.0.0.1:3000/${folder}/`)
     let response = await a.text();
     // console.log(response);
     let div = document.createElement("div")
@@ -46,7 +46,7 @@ async function getsongs(folder) {
    
 }
 function playmusic(track,pause=false){
-    currentsong.src=(`/spotify/${currfolder}/`+track).replaceAll(" ","-");
+    currentsong.src=(`/${currfolder}/`+track).replaceAll(" ","-");
     // console.log(currentsong);
     // let audio=new Audio("/spotify/music/"+track);
     if(!pause){
