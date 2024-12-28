@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoty Media Player</title> <!-- Sets the page title -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon link -->
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="left ">
+            <div class="home">
+                <div class="close">
+                    <img class="invert" src="./svgs/close.svg" alt="close">
+                </div>
+                <div class="logo "> <img class="invert" width="100px" src="./svgs/logo.svg" alt="spotify logo">
+                </div>
+                <ul>
+                    <li><img class="invert" src="./svgs/home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="./svgs/search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="libarary">
+                <div class="heading">
+                    <img class="invert" src="./svgs/playlist.svg" width="14px" alt="play">
+                    <h2>Your libarary </h2>
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy
+                                Center</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+        <div class="right ">
+            <div class="header">
+                <div class="nav">
+                    <img class="invert hamburger" width="40px" src="./svgs/hamburger.svg" alt="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="sign btn">Sign up</button>
+                    <button class="login btn">Log in </button>
+                </div>
+            </div>
+            <div class="spotiyPlayList">
+                <h1>Spotify Playlist</h1>
+                <div class="cardConatiner">
+                    <div data-folder="cs"  class="card">
+                        <img class="play" src="./svgs/play.svg" width="30px" height="30px" alt="play">
+                        <img src="./songs/happyhits/cover (1).jpg" alt="HappyHits">
+                        <h2>Happy hits</h2>
+                        <p>Hits to boost your mood and fill with happiness</p>
+                    </div>
+                    <div data-folder="ncs" class="card">
+                        <img class="play" src="./svgs/play.svg" width="30px" height="30px" alt="play">
+                        <img src="./songs/happyhits/cover (1).jpg" alt="HappyHits">
+                        <h2>Happy hits</h2>
+                        <p>Hits to boost your mood and fill with happiness</p>
+                    </div>
+                    <div class="card">
+                        <img class="play" src="./svgs/play.svg" width="30px" height="30px" alt="play">
+                        <img src="./songs/happyhits/cover (1).jpg" alt="HappyHits">
+                        <h2>Happy hits</h2>
+                        <p>Hits to boost your mood and fill with happiness</p>
+                    </div>
+
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo"></div>
+                        <div class="songbuttons">
+                            <img width="35px" id="previous" src="./svgs/previoussong.svg" alt="">
+                            <img width="35px" id="play" src="./svgs/playsong.svg" alt="">
+                            <img width="35px" id="next" src="./svgs/nextsong.svg" alt="">
+                        </div>
+                        <div class="timevol">
+                            <div class="songtime">
+
+                            </div>
+                            <div class="volume" >
+                                <img width="20px" height="20px" src="./svgs/volume.svg" alt="volume">
+                                <div class="range">
+                                    <input type="range" name="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>
